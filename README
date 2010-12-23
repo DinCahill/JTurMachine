@@ -1,7 +1,7 @@
 JTurMachine
 
 A Turing Machine simulator, written in Java.
-########################################################################
+
 Currently, JTurMachine can certainly run Turing Machine programs which
 start with a blank tape, e.g. busy beavers. Creating a machine with a
 non-blank tape has not been tested.
