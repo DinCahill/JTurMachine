@@ -1,0 +1,21 @@
+JTurMachine
+
+A Turing Machine simulator, written in Java.
+########################################################################
+Currently, JTurMachine can certainly run Turing Machine programs which
+start with a blank tape, e.g. busy beavers. Creating a machine with a
+non-blank tape has not been tested.
+
+USAGE:
+
+The only way to run a program at the moment is with a Java class, as can
+be seen in src/TuringMachineTest.java.
+
+TODO:
+
+- Fix the creation of machines with a non-blank tape.
+- Decide on notation for programming a machine.
+- Read and execute programs from a file.
+- Improve the way in which the contents of a tape are printed.
+
+Eclipse project files are included.
