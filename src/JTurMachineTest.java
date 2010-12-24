@@ -21,11 +21,11 @@ import junit.framework.TestCase;
 import java.util.HashMap;
 
 /**
- * Unit test for the TuringMachine. Runs 3- and 4-state busy beavers.
+ * Unit test for the JTurMachine. Runs 3- and 4-state busy beavers.
  * 
  * @author Donal Cahill
  */
-public class TuringMachineTest extends TestCase {
+public class JTurMachineTest extends TestCase {
 	
 	// Define the variables
 	String[] dictionary = {"0", "1"};
@@ -36,13 +36,13 @@ public class TuringMachineTest extends TestCase {
 	State D;
 	State HALT;
 	HashMap<String, State> stateList;
-	TuringMachine machine;
+	JTurMachine machine;
 	
 	/**
 	 * @param arg0
 	 */
 	/*
-	public TuringMachineTest(String arg0) {
+	public JTurMachineTest(String arg0) {
 		super(arg0);
 	}
 	*/
@@ -84,7 +84,7 @@ public class TuringMachineTest extends TestCase {
 		stateList.put("C", C);
 		stateList.put("HALT", HALT);
 		
-		machine = new TuringMachine(dictionary[0], dictionary, null, stateList.get("A"), stateList);
+		machine = new JTurMachine(dictionary[0], dictionary, null, stateList.get("A"), stateList);
 		machine.execute();
 		System.out.println();
 		assertEquals(machine.getTapeString(), "111111");
@@ -124,7 +124,7 @@ public class TuringMachineTest extends TestCase {
 		stateList.put("D", D);
 		stateList.put("HALT", HALT);
 		
-		machine = new TuringMachine(dictionary[0], dictionary, null, stateList.get("A"), stateList);
+		machine = new JTurMachine(dictionary[0], dictionary, null, stateList.get("A"), stateList);
 		machine.execute();
 		System.out.println();
 		assertEquals(machine.getTapeString(), "10111111111111");

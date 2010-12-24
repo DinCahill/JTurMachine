@@ -19,7 +19,7 @@
 package jturmachine;
 
 /**
- * An operation which can be executed on a TuringMachine.
+ * An operation which can be executed on a JTurMachine.
  * 
  * @author Donal Cahill
  */
@@ -33,7 +33,7 @@ public class Operation {
 	 * 
 	 * @param writeSymbol the String symbol to be written to the current Tape cell
 	 * @param moveDirection the String of the direction, "L", "R" or "N", in which the Tape will move after writing
-	 * @param nextState the State which the TuringMachine will move to after moving the Tape
+	 * @param nextState the State which the JTurMachine will move to after moving the Tape
 	 */
 	public Operation(String writeSymbol, String moveDirection, State nextState) {
 		this.writeSymbol = writeSymbol;

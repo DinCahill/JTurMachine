@@ -20,7 +20,7 @@ package jturmachine;
 import java.util.HashMap;
 
 /**
- * A State in which a TuringMachine can be.
+ * A State in which a JTurMachine can be.
  * 
  * A State contains a list of Operations which can be executed
  * while in this State, and selects the appropriate one, based
@@ -59,7 +59,7 @@ public class State {
 	 * @param inputSymbol the String symbol which must be read from the Tape for this Operation to be executed
 	 * @param writeSymbol the String symbol to be written to the current Tape cell by this Operation
 	 * @param moveDirection the String of the direction, "L", "R" or "N", in which the Tape will move after writing
-	 * @param nextState the State which the TuringMachine will move to after moving the Tape
+	 * @param nextState the State which the JTurMachine will move to after moving the Tape
 	 */
 	public void addOperation(String inputSymbol, String writeSymbol, String moveDirection, State nextState) {
 		String[] op = { writeSymbol, moveDirection, nextState.toString() };

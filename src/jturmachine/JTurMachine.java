@@ -27,7 +27,7 @@ import java.util.HashMap;
  * 
  * @author Donal Cahill
  */
-public class TuringMachine {
+public class JTurMachine {
 	
 	String[] dictionary;
 	Tape tape;
@@ -39,11 +39,11 @@ public class TuringMachine {
 	 * Class constructor.
 	 * 
 	 * @param dictionary an array of Strings, one of which can be written to any cell
-	 * @param tape the Tape with which this TuringMachine is initially loaded. If tape points to null, a blank tape is used  
-	 * @param initialState the initial State of this TuringMachine
+	 * @param tape the Tape with which this JTurMachine is initially loaded. If tape points to null, a blank tape is used  
+	 * @param initialState the initial State of this JTurMachine
 	 * @param stateList the HashMap linking String names of States and their variable names
 	 */
-	public TuringMachine(String blank, String[] dictionary, Tape tape, State initialState, HashMap<String, State> stateList) {
+	public JTurMachine(String blank, String[] dictionary, Tape tape, State initialState, HashMap<String, State> stateList) {
 		this.dictionary = dictionary;
 		// If a tape is specified, use it, else use a blank tape.
 		if (tape != null) {
@@ -56,10 +56,10 @@ public class TuringMachine {
 	}
 	
 	/**
-	 * The main loop of this TuringMachine.
+	 * The main loop of this JTurMachine.
 	 * 
 	 * Keeps executing operations until the State called "HALT",
-	 * upon which this TuringMachine exits the and prints some
+	 * upon which this JTurMachine exits the and prints some
 	 * final information.
 	 */
 	public void execute() {
@@ -89,7 +89,7 @@ public class TuringMachine {
 	}
 	
 	/**
-	 * @return a String of symbols from the portion of this TuringMachine's Tape which has been accessed
+	 * @return a String of symbols from the portion of this JTurMachine's Tape which has been accessed
 	 */
 	public String getTapeString() {
 		return tape.toString();
