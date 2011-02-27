@@ -46,8 +46,11 @@ public class Tape {
 		this.blank = blank;
 		tapeList.add(this.blank);
 		currentSymbol = this.blank;
-		this.move("L");
-		this.move("R");
+		
+		/*	I'm sure this isn't needed now
+			this.move("L");
+			this.move("R");
+		 */
 	}
 	
 	/**
